@@ -48,7 +48,7 @@ Por ser um projeto front-end puro, não há necessidade de um servidor ou depend
     ```
 3.  Abra o arquivo `index.html` em seu navegador de preferência.
 
-ou acesse o site clicando no link abaixo:
+ou acesse o site clicando no link abaixo: \
 <https://joplincruz.github.io/contos-de-aventuras-do-bau-dos-tesouros/>
 
 Pronto! A aventura já pode começar.
@@ -67,4 +67,5 @@ O baú sempre pode guardar mais tesouros! Algumas ideias para futuras implementa
 
 - [Linkedin](https://www.linkedin.com/in/joplincruz)
 - [Github](https://github.com/JoplinCruz)
+
 

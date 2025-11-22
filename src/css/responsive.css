@@ -1,0 +1,96 @@
+
+@media (max-width: 768px) {
+    header { /* Estilos para telas com largura máxima de 768px */
+      flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
+      padding: 1rem; /* Reduz o espaçamento interno */
+    }
+
+    header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
+      text-align: center; /* Centraliza o texto */
+      margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+
+    div input { /* Estilos para o input em telas menores */
+      width: 70vw; /* Largura baseada na largura da viewport */
+      font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    }
+
+    main { /* Estilos para o main em telas menores */
+      padding: 0 1rem; /* Adiciona espaçamento lateral */
+    }
+
+    article:hover { /* Estilos para o article em telas menores */
+      transform: none; /* Remove o efeito de escala ao passar o mouse */
+    }
+
+    .floating-card {
+      width: 90%;
+      justify-content: start;
+    }
+
+    .floating-head .title {
+      font-size: 1.2rem;
+    }
+
+    .floating-head .cover img {
+      max-width: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
+      font-size: 2rem; /* Reduz ainda mais o tamanho da fonte */
+      max-width: 70%; /* Define uma largura máxima */
+      word-wrap: break-word; /* Permite a quebra de palavras longas */
+    }
+
+    div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    div input::placeholder {
+      font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+
+    article h2 { /* Estilos para o h2 do article em telas muito pequenas */
+      font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    }
+
+    article .cover {
+      display: none;
+    }
+
+    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
+      display: flex; /* Habilita flexbox */
+      align-items: center; /* Alinha itens ao centro */
+      justify-content: center; /* Centraliza itens */
+      flex-direction: column; /* Organiza em coluna */
+      gap: 0.5rem; /* Espaçamento entre os itens */
+    }
+
+    .footer { /* Estilos para o rodapé em telas muito pequenas */
+        display: none; /* Oculta o rodapé */
+    }
+
+    button { /* Estilos para o botão em telas muito pequenas */
+      width: 100%;
+      margin-top: .3rem; /* Adiciona margem no topo */
+    }
+
+    .floating-card {
+      width: 90%;
+      justify-content: start;
+    }
+
+    .floating-head {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .floating-head .cover img {
+      max-width: 6rem;
+      max-height: 6rem;
+    }
+
+    .floating-head .title {
+      font-size: 1rem;
+    }
+}

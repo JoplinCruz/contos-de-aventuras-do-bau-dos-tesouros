@@ -37,6 +37,12 @@ header h1 {
   mix-blend-mode: screen;
 }
 
+header h1 a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
 div input {
   font-family: inherit;
   font-size: 1.3rem;
@@ -135,6 +141,10 @@ article .cover {
 
 article .cover img {
   border-top-left-radius: 1rem;
+  max-width: 8rem;
+  max-height: 9rem;
+  width: auto;
+  height: auto;
 }
 
 article .info {
@@ -214,4 +224,118 @@ article a:active {
 
 .footer a:active {
   color: hsl( from var(--secondary-color) h s calc(l * .8));
+}
+
+
+.floating-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000ea;
+  z-index: 32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-card {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  overflow-y: auto;
+  z-index: 36;
+  background-color: hsl(from var(--tertiary-color) h s calc(l * .13) / 1);
+  border: .3rem solid hsl(from var(--tertiary-color) h s calc(l * .18) / 1);
+  border-radius: 1rem;
+}
+
+.floating-card::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+.floating-card::-webkit-scrollbar-thumb {
+  border-radius: .25rem;
+  background-color: hsl( from var(--tertiary-color) h s calc(l * .33) / 1);
+}
+
+.floating-head {
+  display: flex;
+  background-color: hsl(from var(--tertiary-color) h s calc(l * .33) / 1);
+}
+
+.floating-head .cover {
+  display: flex;
+  align-items: center;
+}
+
+.floating-head .cover img {
+  max-width: 16rem;
+  max-height: 9rem;
+  width: auto;
+  height: min-content;
+}
+
+.floating-head .title {
+  font-family: "Workbench";
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 0 0 .9rem var(--primary-color);
+  color: hsl( from var(--secondary-color) h s calc(l * 1.1) / 1);
+  background-image: url("../img/title-background.png");
+}
+
+.floating-card .description {
+  display: flex;
+  flex-direction: column;
+  gap:.4rem;
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+.floating-card .description p {
+  font-weight: 200;
+  line-height: 1.2;
+  font-size: 1.3rem;
+  color: hsl( from var(--tertiary-color) h s calc(l * .9) / 1);
+}
+
+.floating-card .description p span {
+  color: hsl( from var(--secondary-color) h s calc(l * .95) / 1);
+}
+
+.floating-card .description p strong {
+  color: hsl( from var(--secondary-color) h s calc(l * 1.1) / 1);
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.floating-card a {
+  font-weight: 200;
+  color: hsl( from var(--primary-color) h s calc(l * .75) / 1);
+  text-decoration: none;
+  transition: color .3s ease, text-decoration .3s ease;
+}
+
+.description a {
+  font-size: 1.3rem;
+}
+
+.floating-card a:hover {
+  color: hsl( from var(--primary-color) h s calc(l * 1.1) / 1);
+  text-decoration: underline;
+}
+
+.floating-card a:active {
+  color: hsl( from var(--primary-color) h s calc(l * 1.33) / 1);
 }

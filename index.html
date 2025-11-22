@@ -6,26 +6,29 @@
   <title>Contos de Aventuras do Baú dos Tesouros</title>
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
 </head>
 <body>
   <header>
     <h1>
-      <div>
-        Contos de Aventuras
-      </div>
-      <div>
-        do Baú dos Tesouros
-      </div>
+      <a href="/">
+        <div>
+          Contos de Aventuras
+        </div>
+        <div>
+          do Baú dos Tesouros
+        </div>
+      </a>
     </h1>
-    <form id="seeker">
+    <form id="search__container">
       <div>
-        <input id="search-term" type="text" placeholder="Digite o objeto de busca" />
+        <input id="search-input" type="text" placeholder="Digite o objeto de busca" />
         <button id="search-button" type="submit">buscar</button>
       </div>
     </form>
   </header>
   <main>
-    <section id="card-container">
+    <section id="card__container">
       <!-- <article class="card">
         <div class="image">
           <img src="/" alt="nothing">
@@ -49,6 +52,7 @@
       </li>
     </ul>
   </footer>
+  <div id="floating__container"></div>
   <script src="./src/js/script.js"></script>
 </body>
 </html>

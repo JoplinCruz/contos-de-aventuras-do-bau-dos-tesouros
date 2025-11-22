@@ -65,5 +65,6 @@ O baú sempre pode guardar mais tesouros! Algumas ideias para futuras implementa
 
 ## 👤 Autor
 
-- Linkedin
-- Github
+- [Linkedin](https://www.linkedin.com/in/joplincruz)
+- [Github](https://github.com/JoplinCruz)
+
